@@ -7,10 +7,10 @@
 //
 
 struct Person {
-    var firstName: String
-    var lastName: String
-    var email: String
-    var phone: String
+    let firstName: String
+    let lastName: String
+    let email: String
+    let phone: String
     
     var fullName: String {
         "\(firstName) \(lastName)"
@@ -21,58 +21,22 @@ extension Person {
     
     static func getPersonList() -> [Person] {
         
-        let firstNames = ["Paula",
-                          "Ranveer",
-                          "Darragh",
-                          "Artur",
-                          "Parris",
-                          "Bertram",
-                          "Ivie",
-                          "Wil",
-                          "Vinay",
-                          "Patrick"].shuffled()
+        var persons: [Person] = []
         
-        let lastNames = ["Charlton",
-                         "Smart",
-                         "Cordova",
-                         "Lyon",
-                         "Willis",
-                         "Howell",
-                         "Kenny",
-                         "Booker",
-                         "Chang",
-                         "Matthews"].shuffled()
+        let names = DataManager.shared.names.shuffled()
+        let surnames = DataManager.shared.surnames.shuffled()
+        let emails = DataManager.shared.emails.shuffled()
+        let phones = DataManager.shared.phones.shuffled()
         
-        let emails = ["roesch@outlook.com",
-                      "ilial@icloud.com",
-                      "kimvette@yahoo.com",
-                      "eminence@icloud.com",
-                      "uqmcolyv@aol.com",
-                      "hampton@gmail.com",
-                      "nwiger@sbcglobal.net",
-                      "thrymm@live.com",
-                      "dkasak@mac.com",
-                      "danneng@hotmail.com"].shuffled()
-        
-        let phoneNumbers = ["(851) 402-7328",
-                            "(333) 233-2286",
-                            "(233) 469-4653",
-                            "(954) 642-0353",
-                            "(751) 275-8168",
-                            "(995) 544-0455",
-                            "(893) 419-8613",
-                            "(444) 775-5216",
-                            "(946) 852-6245",
-                            "(662) 953-4034"].shuffled()
-        
-        var persons = [Person]()
-        for i in 0..<firstNames.count {
-            let person = Person(firstName: firstNames[i],
-                                  lastName: lastNames[i],
-                                  email: emails[i],
-                                  phone: phoneNumbers[i])
+        for index in 0..<names.count {
+            let person = Person(firstName: names[index],
+                                lastName: surnames[index],
+                                email: emails[index],
+                                phone: phones[index])
+            
             persons.append(person)
         }
+        
         return persons
     }
 }

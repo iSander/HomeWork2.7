@@ -16,6 +16,7 @@
 		A6B77C2323FD703F00D2DE71 /* SectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B77C2223FD703F00D2DE71 /* SectionTableViewController.swift */; };
 		A6B77C2523FD7C5B00D2DE71 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B77C2423FD7C5B00D2DE71 /* Person.swift */; };
 		A6B77C2723FDD2A500D2DE71 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B77C2623FDD2A500D2DE71 /* DetailViewController.swift */; };
+		A6B77EB1240021F900D2DE71 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B77EB0240021F800D2DE71 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		A6B77C2223FD703F00D2DE71 /* SectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTableViewController.swift; sourceTree = "<group>"; };
 		A6B77C2423FD7C5B00D2DE71 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		A6B77C2623FDD2A500D2DE71 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		A6B77EB0240021F800D2DE71 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		A6B77C0D23FD6D1A00D2DE71 /* HomeWork2.7 */ = {
 			isa = PBXGroup;
 			children = (
+				A6B77EB2240021FC00D2DE71 /* Managers */,
 				A6B77C2823FE8AD300D2DE71 /* Models */,
 				A6B77C2923FE8AE600D2DE71 /* ViewControllers */,
 				A6B77C2A23FE8AFD00D2DE71 /* Storyboards */,
@@ -114,6 +117,14 @@
 				A6B77C1723FD6D1B00D2DE71 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		A6B77EB2240021FC00D2DE71 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A6B77EB0240021F800D2DE71 /* DataManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +201,7 @@
 				A6B77C1323FD6D1A00D2DE71 /* RawTableViewController.swift in Sources */,
 				A6B77C0F23FD6D1A00D2DE71 /* AppDelegate.swift in Sources */,
 				A6B77C2523FD7C5B00D2DE71 /* Person.swift in Sources */,
+				A6B77EB1240021F900D2DE71 /* DataManager.swift in Sources */,
 				A6B77C2723FDD2A500D2DE71 /* DetailViewController.swift in Sources */,
 				A6B77C2323FD703F00D2DE71 /* SectionTableViewController.swift in Sources */,
 				A6B77C1123FD6D1A00D2DE71 /* SceneDelegate.swift in Sources */,
